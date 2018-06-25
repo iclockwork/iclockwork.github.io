@@ -29,7 +29,7 @@ type: page
 
 ## 关于本站
 
-* [Jekyll themes](http://jekyllthemes.org)
+* [Jekyll Themes](https://github.com/Gaohaoyang/gaohaoyang.github.io)
 
 ## 友情链接
 
