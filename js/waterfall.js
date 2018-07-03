@@ -35,7 +35,15 @@
             code_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/index.html#g=1&c=1&p=index-v3',
             title: 'rfocus-jxt-web',
             core_tech: 'Axure',
-            description: '微信管理控制台，也没什么东西。'
+            description: '家校通-WEB'
+        },
+        {
+            demo_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/index.html#g=1&p=home_2&c=1',
+            img_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/images/wechat_1/u6156.png',
+            code_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/index.html#g=1&p=home_2&c=1',
+            title: 'rfocus-jxt-wechat',
+            core_tech: 'Axure',
+            description: '家校通-WeChat'
         }
     ];
 
