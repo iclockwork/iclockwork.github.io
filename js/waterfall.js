@@ -44,6 +44,14 @@
             title: '微信管理控制台',
             core_tech: 'Axure',
             description: '微信管理控制台，也没什么东西。'
+        },
+        {
+            demo_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/Tutami/index.html#g=1&p=home&c=1',
+            img_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/Tutami/images/dashboard/u1015.png',
+            code_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/Tutami/index.html#g=1&p=home&c=1',
+            title: 'Tutami',
+            core_tech: 'Axure',
+            description: '美式学习方法，不止SAT/ACT高分技巧。'
         }
     ];
 
