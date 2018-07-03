@@ -52,6 +52,14 @@
             title: 'Tutami',
             core_tech: 'Axure',
             description: '美式学习方法，不止SAT/ACT高分技巧。'
+        },
+        {
+            demo_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/Tutami-v2-report/index.html#g=1&p=mobile&c=1',
+            img_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/Tutami-v2-report/images/wechat/u963.png',
+            code_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/Tutami-v2-report/index.html#g=1&p=mobile&c=1',
+            title: 'Tutami-Report',
+            core_tech: 'Axure',
+            description: '美式学习方法，不止SAT/ACT高分技巧。'
         }
     ];
 
