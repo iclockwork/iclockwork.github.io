@@ -22,14 +22,6 @@
             description: '第一个示例，没什么东西。'
         },
         {
-            demo_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/wx-console/index.html',
-            img_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/wx-console/images/index/u94.png',
-            code_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/wx-console/index.html',
-            title: '微信管理控制台',
-            core_tech: 'Axure',
-            description: '微信管理控制台，也没什么东西。'
-        },
-        {
             demo_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/index.html#g=1&c=1&p=index-v3',
             img_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/images/notice-add-text-ueditor/u4404.png',
             code_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/index.html#g=1&c=1&p=index-v3',
@@ -52,6 +44,14 @@
             title: 'rfocus系统家校通模块的微信端',
             core_tech: 'Axure',
             description: '手机上直接访问'
+        },
+        {
+            demo_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/wx-console/index.html',
+            img_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/wx-console/images/index/u94.png',
+            code_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/wx-console/index.html',
+            title: '微信管理控制台',
+            core_tech: 'Axure',
+            description: '微信管理控制台，也没什么东西。'
         }
     ];
 
