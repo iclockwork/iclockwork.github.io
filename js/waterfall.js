@@ -33,17 +33,25 @@
             demo_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/index.html#g=1&c=1&p=index-v3',
             img_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/images/notice-add-text-ueditor/u4404.png',
             code_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/index.html#g=1&c=1&p=index-v3',
-            title: 'rfocus-jxt-web',
+            title: 'rfocus系统家校通模块的后台',
             core_tech: 'Axure',
-            description: '家校通-WEB'
+            description: 'rfocus系统家校通模块的后台'
         },
         {
             demo_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/index.html#g=1&p=home_2&c=1',
             img_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/images/wechat_1/u6156.png',
             code_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/index.html#g=1&p=home_2&c=1',
-            title: 'rfocus-jxt-wechat',
+            title: 'rfocus系统家校通模块的微信端',
             core_tech: 'Axure',
-            description: '家校通-WeChat'
+            description: 'rfocus系统家校通模块的微信端'
+        },
+        {
+            demo_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/index.html#g=1&p=wechat_1&c=1',
+            img_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/images/wechat_1/u6156.png',
+            code_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/rfocus-jxt/index.html#g=1&p=wechat_1&c=1',
+            title: 'rfocus系统家校通模块的微信端',
+            core_tech: 'Axure',
+            description: '手机上直接访问'
         }
     ];
 
