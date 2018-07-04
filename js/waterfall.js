@@ -60,6 +60,14 @@
             title: 'Tutami-Report',
             core_tech: 'Axure',
             description: '美式学习方法，不止SAT/ACT高分技巧。'
+        },
+        {
+            demo_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/WeAx/index.html',
+            img_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/WeAx/images/index/u0.png',
+            code_link: 'https://demo-show.oss-cn-hangzhou.aliyuncs.com/axure/WeAx/index.html',
+            title: 'WeAX',
+            core_tech: 'Axure',
+            description: 'WeAx 是WeUI的高保真Axure元件库, 目标是帮助产品设计人员轻松, 快速的为用户提供与最终产品一致的视觉体验和交互体验, 降低因沟通导致的损失, 并加速开发。'
         }
     ];
 
