@@ -7,7 +7,7 @@ author: Percy
 ---
 
 * content
-  {:toc}
+{:toc}
 
 ### 1、安装
 机器：47.97.4.204
