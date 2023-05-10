@@ -10,10 +10,10 @@ author: Percy
 {:toc}
 
 ### 1、安装
-机器：47.97.4.204
-版本：23.0.5
-方式：python
-docker-compose版本：1.29.2
+* 机器：47.97.4.204
+* 版本：23.0.5
+* 方式：python
+* docker-compose版本：1.29.2
 
 ### 2、应用部署
 #### Nacos
