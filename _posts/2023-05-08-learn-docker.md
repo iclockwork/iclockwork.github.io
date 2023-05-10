@@ -69,7 +69,7 @@ docker pull tomcat
 ```sh
 docker run -d -p 18080:8080 --name tomcat tomcat
 ```
-* 访问：http://47.97.4.204:18080/
+* 访问：http://47.97.4.204:18080
 
 ### 3、可视化
 #### portainer
@@ -81,7 +81,7 @@ docker pull portainer/portainer
 ```sh
 docker run -d -p 18000:8000 -p 19000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
 ```
-* 访问：http://47.97.4.204:18000 admin/admin123456789
+* 访问：http://47.97.4.204:19000 admin/admin123456789
 
 ### 4、Dockerfile
 
