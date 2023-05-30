@@ -49,7 +49,18 @@ docker run -p 13306:3306 --name mysql --restart=always --privileged=true \
 -v /home/mysql/data:/var/lib/mysql \
 -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7
 ```
+大多数情况下，启动数据库容器，都需要将数据卷挂载到容器外，这样，容器被删除了，数据也不会丢失。
 * 连接：47.97.4.204:13306
+#### Postgres
+* 拉取镜像：
+```sh
+docker pull postgres
+```
+* 容器启动：
+```sh
+docker run -d -p 15432:5432 --name postgres -v /home/postgresql/data:/var/lib/postgresql/data --restart=always --privileged=true -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 postgres 
+```
+* 连接：47.97.4.204:15432
 #### Redis
 * 拉取镜像：
 ```sh
