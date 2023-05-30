@@ -14,7 +14,6 @@ author: Percy
 * 版本：23.0.5
 * 方式：python
 * docker-compose版本：1.29.2
-
 ### 2、应用部署
 #### Nacos
 * 拉取镜像：
@@ -81,7 +80,6 @@ docker pull tomcat
 docker run -d -p 18080:8080 --name tomcat tomcat
 ```
 * 访问：http://47.97.4.204:18080
-
 ### 3、可视化
 #### portainer
 * 拉取镜像：
@@ -93,7 +91,9 @@ docker pull portainer/portainer
 docker run -d -p 18000:8000 -p 19000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
 ```
 * 访问：http://47.97.4.204:19000 admin/admin123456789
-
 ### 4、Dockerfile
-
+用于构建镜像，类似maven pom文件，IDEA有插件支持远程构建。
 ### 5、Docker Compose
+使用YML文件定义和运行多容器应用。
+### 6、Docker Swarm
+容器编排
