@@ -28,13 +28,37 @@ docker run --env MODE=standalone --name nacos -d -p 18848:8848 nacos/nacos-serve
 #### Nginx
 * 拉取镜像：
 ```sh
-docker pull nginx
+docker pull nginx:1.22.1
 ```
 * 容器启动：
 ```sh
-docker run -di --name nginx -p 180:80 nginx
+docker run --name nginx -p 80:80 -d nginx:1.22.1
 ```
-* 访问：http://47.97.4.204:180
+* 复制文件：
+```sh
+docker cp nginx:/etc/nginx/nginx.conf /home/nginx/nginx.conf
+docker cp nginx:/etc/nginx/conf.d/ /home/nginx/conf.d/
+docker cp nginx:/usr/share/nginx/html/ /home/nginx/html/
+docker cp nginx:/var/log/nginx/ /home/nginx/logs/
+```
+* 容器停止、删除：
+```sh
+docker stop nginx
+docker rm nginx
+```
+* 容器启动：
+```sh
+docker run -p 80:80 -p 8889:8889 \
+-v /home/nginx/nginx.conf:/etc/nginx/nginx.conf \
+-v /home/nginx/logs:/var/log/nginx \
+-v /home/nginx/html:/usr/share/nginx/html \
+-v /home/nginx/conf.d:/etc/nginx/conf.d \
+-v /etc/localtime:/etc/localtime \
+--name nginx \
+--restart=always \
+-d nginx:1.22.1
+```
+* 访问：http://47.97.4.204:80
 #### MySQL
 * 拉取镜像：
 ```sh
@@ -97,3 +121,12 @@ docker run -d -p 18000:8000 -p 19000:9000 --name=portainer --restart=always -v /
 使用YML文件定义和运行多容器应用。
 ### 6、Docker Swarm
 容器编排
+### 7、其它
+* 注意容器时区，启动加参数
+```sh
+-v /etc/localtime:/etc/localtime
+```
+* 进入容器
+```sh
+docker exec -it 容器ID /bin/sh
+```
