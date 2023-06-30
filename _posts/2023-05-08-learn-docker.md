@@ -104,6 +104,38 @@ docker pull tomcat
 docker run -d -p 18080:8080 --name tomcat tomcat
 ```
 * 访问：http://47.97.4.204:18080
+#### MinIO
+* 拉取镜像：
+```sh
+docker pull minio/minio
+```
+* 容器启动：
+```sh
+docker run --name minio-gpl -p 29000:9000 -p 29001:9001 \
+-d --restart=always --privileged=true \
+-e "MINIO_ROOT_USER=admin" \
+-e "MINIO_ROOT_PASSWORD=admin123456789" \
+-v /home/minio-gpl/data:/data \
+-v /home/minio-gpl/config:/root/.minio \
+minio/minio server /data --address ':9000' --console-address ':9001'
+```
+* 访问：http://47.97.4.204:29001
+#### MinIO (旧版Apache)
+* 拉取镜像：
+```sh
+docker pull minio/minio:RELEASE.2021-04-22T15-44-28Z
+```
+* 容器启动：
+```sh
+docker run --name minio -p 9000:9000 \
+-d --restart=always --privileged=true \
+-e "MINIO_ROOT_USER=admin" \
+-e "MINIO_ROOT_PASSWORD=admin123456789" \
+-v /home/minio/data:/data \
+-v /home/minio/config:/root/.minio \
+minio/minio:RELEASE.2021-04-22T15-44-28Z server /data
+```
+* 访问：http://47.97.4.204:9000
 ### 3、可视化
 #### portainer
 * 拉取镜像：
