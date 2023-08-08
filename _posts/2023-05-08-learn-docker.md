@@ -136,6 +136,22 @@ docker run --name minio -p 9000:9000 \
 minio/minio:RELEASE.2021-04-22T15-44-28Z server /data
 ```
 * 访问：http://47.97.4.204:9000
+#### One API
+* 容器启动：
+```sh
+docker run --name one-api -d --restart always -p 3000:3000 -e TZ=Asia/Shanghai -e "SQL_DSN=one-api:123456@tcp(47.97.4.204:13306)/one-api" -e "REDIS_CONN_STRING=redis://11@47.97.4.204:16379" -e "SYNC_FREQUENCY=60" -v /home/ubuntu/data/one-api:/data justsong/one-api
+```
+* 访问：http://47.97.4.204:3000
+#### ChatGPT-Next-Web
+* 容器启动：
+```sh
+docker run --name chatgpt-next-web -d -p 3001:3000 \
+   -e OPENAI_API_KEY="sk-ZPw1zjYRJDoKxuOyC95bAc1e86Ad4d2484E4C824FeB056Dc" \
+   -e CODE="qwer123456789" \
+   -e BASE_URL="http://47.97.4.204:3000" \
+   yidadaa/chatgpt-next-web
+```
+* 访问：http://47.97.4.204:3001
 ### 3、可视化
 #### portainer
 * 拉取镜像：
