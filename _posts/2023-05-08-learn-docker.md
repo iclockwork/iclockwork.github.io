@@ -93,6 +93,9 @@ docker pull redis
 ```sh
 docker run -di --name redis -p 16379:6379 redis
 ```
+```sh
+docker run -di --name redis-pwd -p 26379:6379 redis --requirepass 123456
+```
 * 连接：47.97.4.204:16379
 #### Tomcat
 * 拉取镜像：
