@@ -77,11 +77,11 @@ docker run -p 13306:3306 --name mysql --restart=always --privileged=true \
 #### Postgres
 * 拉取镜像：
 ```sh
-docker pull postgres
+docker pull postgres:15.3
 ```
 * 容器启动：
 ```sh
-docker run -d -p 15432:5432 --name postgres -v /home/postgresql/data:/var/lib/postgresql/data --restart=always --privileged=true -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 postgres 
+docker run -d -p 15432:5432 --name postgres -v /home/postgresql/data:/var/lib/postgresql/data --restart=always --privileged=true -e POSTGRES_PASSWORD=123456 -e ALLOW_IP_RANGE=0.0.0.0/0 postgres:15.3 
 ```
 * 连接：47.97.4.204:15432
 #### Redis
