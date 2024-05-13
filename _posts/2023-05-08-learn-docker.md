@@ -74,6 +74,22 @@ docker run -p 13306:3306 --name mysql --restart=always --privileged=true \
 ```
 大多数情况下，启动数据库容器，都需要将数据卷挂载到容器外，这样，容器被删除了，数据也不会丢失。
 * 连接：47.97.4.204:13306
+#### MySQL8
+* 拉取镜像：
+```sh
+docker pull mysql:8.0.31
+```
+* 容器启动：
+```sh
+docker run -p 23306:3306 --name mysql8 --restart=always --privileged=true \
+-v /home/mysql8/conf:/etc/mysql/conf.d \
+-v /home/mysql8/log:/var/log \
+-v /home/mysql8/data:/var/lib/mysql \
+-e TZ=Asia/Shanghai \
+-e MYSQL_ROOT_PASSWORD=mysqlQwer8! -d mysql:8.0.31
+```
+大多数情况下，启动数据库容器，都需要将数据卷挂载到容器外，这样，容器被删除了，数据也不会丢失。
+* 连接：47.97.4.204:23306
 #### Postgres
 * 拉取镜像：
 ```sh
