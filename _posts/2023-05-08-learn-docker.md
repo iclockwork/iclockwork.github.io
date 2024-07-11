@@ -172,6 +172,17 @@ docker run --name chatgpt-next-web -d -p 3001:3000 \
    yidadaa/chatgpt-next-web
 ```
 * 访问：http://47.97.4.204:3001
+#### mayfly-go
+* 拉取镜像：
+```sh
+docker pull ccr.ccs.tencentyun.com/mayfly/mayfly-go:v1.8.7
+```
+* 容器启动：
+```sh
+# 直接挂载容器工作目录（注：需要将config.yml复制到/usr/local/mayfly-go文件夹下））
+docker run -d --name mayfly-go -v /home/mayfly-go:/mayfly -p 18888:18888  ccr.ccs.tencentyun.com/mayfly/mayfly-go:v1.8.7
+```
+* 访问：http://47.97.4.204:18888
 ### 3、可视化
 #### portainer
 * 拉取镜像：
@@ -181,6 +192,10 @@ docker pull portainer/portainer
 * 容器启动：
 ```sh
 docker run -d -p 18000:8000 -p 19000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
+```
+新版
+```sh
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /home/portainer/data:/data portainer/portainer-ce:2.19.5
 ```
 * 访问：http://47.97.4.204:19000 admin/admin123456789
 ### 4、Dockerfile
