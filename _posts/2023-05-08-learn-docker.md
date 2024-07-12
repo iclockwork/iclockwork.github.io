@@ -182,7 +182,24 @@ docker pull ccr.ccs.tencentyun.com/mayfly/mayfly-go:v1.8.7
 # 直接挂载容器工作目录（注：需要将config.yml复制到/usr/local/mayfly-go文件夹下））
 docker run -d --name mayfly-go -v /home/mayfly-go:/mayfly -p 18888:18888  ccr.ccs.tencentyun.com/mayfly/mayfly-go:v1.8.7
 ```
-* 访问：http://47.97.4.204:18888
+#### Jenkins
+* 拉取镜像：
+```sh
+docker pull jenkins/jenkins:2.452.3-lts
+```
+* 容器启动：
+```sh
+docker run -d -u root -p 8080:8080 -p 50000:50000 \
+--restart=always --name jenkins \
+-v /home/jenkins_home:/var/jenkins_home \
+-v /etc/localtime:/etc/localtime \
+-v /usr/bin/docker:/usr/bin/docker \
+-v /var/run/docker.sock:/var/run/docker.sock \
+jenkins/jenkins:2.452.3-lts
+```
+* 连接：47.97.4.204:8080
+* 访问：http://47.97.4.204:8080
+* 安装JDK 17、maven3.0到/home/jenkins_home目录下并设置全局工具JDK和maven使用/var/jenkins_home目录
 ### 3、可视化
 #### portainer
 * 拉取镜像：
