@@ -175,12 +175,12 @@ docker run --name chatgpt-next-web -d -p 3001:3000 \
 #### mayfly-go
 * 拉取镜像：
 ```sh
-docker pull ccr.ccs.tencentyun.com/mayfly/mayfly-go:v1.8.7
+docker pull ccr.ccs.tencentyun.com/mayfly/mayfly-go:v1.8.8
 ```
 * 容器启动：
 ```sh
 # 直接挂载容器工作目录（注：需要将config.yml复制到/usr/local/mayfly-go文件夹下））
-docker run -d --name mayfly-go -v /home/mayfly-go:/mayfly -p 18888:18888  ccr.ccs.tencentyun.com/mayfly/mayfly-go:v1.8.7
+docker run -d --name mayfly-go -v /home/mayfly-go:/mayfly -p 18888:18888  ccr.ccs.tencentyun.com/mayfly/mayfly-go:v1.8.8
 ```
 #### Jenkins
 * 拉取镜像：
