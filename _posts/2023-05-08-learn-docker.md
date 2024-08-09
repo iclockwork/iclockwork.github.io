@@ -113,6 +113,13 @@ docker run -di --name redis -p 16379:6379 redis
 ```sh
 docker run -di --name redis-pwd -p 26379:6379 redis --requirepass 123456
 ```
+```sh
+docker run --name redis -p 26379:6379 \
+-d --restart=always --privileged=true \
+-v /home/redis/redis.conf:/etc/redis/redis.conf \
+-v /home/redis/data:/data \
+-d redis:7.0.12 redis-server /etc/redis/redis.conf
+```
 * 连接：47.97.4.204:16379
 #### Tomcat
 * 拉取镜像：
