@@ -114,10 +114,11 @@ docker run -di --name redis -p 16379:6379 redis
 docker run -di --name redis-pwd -p 26379:6379 redis --requirepass 123456
 ```
 ```sh
-docker run --name redis -p 26379:6379 \
+docker run --name redis7 -p 36379:6379 \
 -d --restart=always --privileged=true \
--v /home/redis/redis.conf:/etc/redis/redis.conf \
--v /home/redis/data:/data \
+-v /home/redis7/redis.conf:/etc/redis/redis.conf \
+-v /home/redis7/data:/data \
+-e TZ=Asia/Shanghai \
 -d redis:7.0.12 redis-server /etc/redis/redis.conf
 ```
 * 连接：47.97.4.204:16379
@@ -202,6 +203,7 @@ docker run -d -u root -p 8080:8080 -p 50000:50000 \
 -v /etc/localtime:/etc/localtime \
 -v /usr/bin/docker:/usr/bin/docker \
 -v /var/run/docker.sock:/var/run/docker.sock \
+-e TZ=Asia/Shanghai \
 jenkins/jenkins:2.452.3-lts
 ```
 * 连接：47.97.4.204:8080
