@@ -209,6 +209,30 @@ jenkins/jenkins:2.452.3-lts
 * 连接：47.97.4.204:8080
 * 访问：http://47.97.4.204:8080
 * 安装JDK 17、maven3.0到/home/jenkins_home目录下并设置全局工具JDK和maven使用/var/jenkins_home目录
+#### kkFileView
+* 拉取镜像：
+```sh
+docker pull keking/kkfileview:4.1.0
+```
+* 容器启动：
+```sh
+docker run -it -p 8012:8012 keking/kkfileview:4.1.0
+```
+* 复制配置文件
+```sh
+docker cp kind_meninsky:/opt/kkFileView-4.1.0/config/application.properties /home/kkFileView/config/application.properties
+```
+* 容器启动：
+```sh
+docker run -d -p 8012:8012 \
+--restart=always --name kkFileView \
+-v /home/kkFileView/config/application.properties:/opt/kkFileView-4.1.0/config/application.properties \
+-v /etc/localtime:/etc/localtime \
+-e TZ=Asia/Shanghai \
+keking/kkfileview:4.1.0
+```
+* 连接：47.97.4.204:8012
+* 访问：http://47.97.4.204:8012
 ### 3、可视化
 #### portainer
 * 拉取镜像：
