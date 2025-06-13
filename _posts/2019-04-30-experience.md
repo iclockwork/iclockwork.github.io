@@ -9,8 +9,4 @@ author: Percy
 * content
 {:toc}
 
-程序员，主Java，目前头发还不错，还自助染了个小色。
-
-还是个拍照的，拍的照片又大又甜。
-
-![](https://tomiv.oss-cn-hangzhou.aliyuncs.com/res/images/experience.png)
+程序员，主Java。
