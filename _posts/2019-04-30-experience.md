@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "我是王峰，感谢您的关注"
+title: "感谢您的关注"
 categories: 个人信息
 tags: 工作经历
 author: Percy
