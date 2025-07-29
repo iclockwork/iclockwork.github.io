@@ -241,7 +241,7 @@ keking/kkfileview:4.1.0
 #### portainer
 * 拉取镜像：
 ```sh
-docker pull portainer/portainer
+docker pull portainer/portainer-ce:2.27.9
 ```
 * 容器启动：
 ```sh
@@ -249,7 +249,7 @@ docker run -d -p 18000:8000 -p 19000:9000 --name=portainer --restart=always -v /
 ```
 新版
 ```sh
-docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /home/portainer/data:/data portainer/portainer-ce:2.19.5
+docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v /home/portainer/data:/data portainer/portainer-ce:2.27.9
 ```
 * 访问：http://47.97.4.204:19000 admin/admin123456789
 ### 4、Dockerfile
