@@ -14,6 +14,48 @@ author: Percy
 * 版本：23.0.5
 * 方式：python
 * docker-compose版本：1.29.2
+* yun安装最新
+* 安装依赖包
+```sh
+yum install -y yum-utils device-mapper-persistent-data lvm2
+```
+* 添加阿里云 Docker 镜像源
+```sh
+yum-config-manager --add-repo https://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo
+```
+* 更新 YUM 缓存
+```sh
+yum makecache fast
+```
+* 安装最新版本 Docker
+```sh
+yum install -y docker-ce-26.1.4 docker-ce-cli-26.1.4 containerd.io
+```
+* 启动 Docker 服务
+```sh
+systemctl start docker
+systemctl enable docker
+```
+* 配置镜像加速器
+```sh
+touch /etc/docker/daemon.json
+vi /etc/docker/daemon.json
+```
+```json
+{
+  "registry-mirrors": ["https://docker.m.daocloud.io",
+    "https://docker.jianmuhub.com",
+    "https://huecker.io",
+    "https://dockerhub.timeweb.cloud",
+    "https://dockerhub1.beget.com",
+    "https://noohub.ru"]
+}
+ ```
+* 重启 Docker 服务
+```sh
+systemctl daemon-reload
+systemctl restart docker
+```
 ### 2、应用部署
 #### Nacos
 * 拉取镜像：
