@@ -307,5 +307,5 @@ docker run -d -p 8000:8000 -p 9443:9443 --name portainer --restart=always -v /va
 ```
 * 进入容器
 ```sh
-docker exec -it 容器ID /bin/sh
+docker exec -it 容器ID /bin/bash
 ```
